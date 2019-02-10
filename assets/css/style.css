@@ -128,9 +128,12 @@ img.homepic {
     display: block;
     /* content: url(''); */
     width: 250px; /* Width of new image */
-    height: 200px; /* Height of new image */
+    height: 250px; /* Height of new image */
     float: left;
-    padding: 5px 20px 20px 20px;
+    /* padding: 5px 20px 20px 20px; */
+    box-shadow: 8px 8px 10px #aaa;
+    border-radius: 5%;
+    margin: 5px 30px 10px -15px;
 }
 
 #portfolio {
@@ -151,6 +154,17 @@ img.homepic {
     width: 300px; /* Width of new image */
     height: 200px; /* Height of new image */
     padding: 5px 10px 20px 20px;
+    object-fit: cover;
+    object-position: 0 25%;
+}
+
+.imgContainer:hover {
+    opacity: 0.5;    
+}
+
+figure img {
+    object-fit: cover;
+    object-position: 0 5%;
 }
 
 .text-block p {
